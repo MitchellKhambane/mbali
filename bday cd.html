@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday Mbali! 🎂</title>
+  <style>
+    body { 
+      background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); 
+      text-align: center; 
+      font-family: 'Arial', sans-serif; 
+      color: white;
+      padding: 50px 20px;
+    }
+    h1 { font-size: 40px; margin-bottom: 10px; }
+    #countdown { 
+      font-size: 60px; 
+      font-weight: bold; 
+      margin: 30px; 
+      background: rgba(255,255,255,0.2);
+      padding: 20px;
+      border-radius: 20px;
+    }
+    .lyrics {
+      background: rgba(255,255,255,0.15);
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 500px;
+      margin: 20px auto;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Mbali's Birthday Countdown 🎉</h1>
+  <div id="countdown"></div>
+  
+  <div class="lyrics">
+    "Mbali, I adore you<br>
+    In every word, in everything you do<br>
+    Girl, you're the prayer I never knew I said"<br>
+    - For the birthday girl 💛
+
+      
+Mbali, when you smile the world goes quiet  
+Like the sun found a place to stay in my eyes  
+I didn’t know my heart could feel this light  
+‘Til I heard your name and it felt like home
+ 
+Every little thing you do  
+Makes me fall a little more for you
+
+Mbali, I adore you  
+In every word, in everything you do  
+If love had a sound, it’d be saying your name  
+Mbali, I’m so in love with you  
+Girl, you’re the prayer I never knew I said  
+And I’d choose you in every life I live
+
+Mbali, you’re my calm in the chaos  
+My favorite hello and hardest goodbye  
+With you, even ordinary days feel like magic  
+‘Cause you turn my world to gold
+
+Mbali, I adore you  
+In every word, in everything you do  
+If love had a sound, it’d be saying your name  
+Mbali, I’m so in love with you  
+Girl, you’re the prayer I never knew I said  
+And I’d choose you in every life I live
+
+
+I don’t need perfect, I just need you  
+Your laugh, your heart, the way you see me through  
+So let me love you right, let me love you true  
+Mbali, this whole song is for you
+ 
+Mbali, I adore you  
+Now and forever, it’s always you  
+Mbali, when you smile the world goes quiet  
+Like the sun found a place to stay in my eyes  
+I didn’t know my heart could feel this light  
+‘Til I heard your name and it felt like home
+ 
+Every little thing you do  
+Makes me fall a little more for you
+
+Mbali, I adore you  
+In every word, in everything you do  
+If love had a sound, it’d be saying your name  
+Mbali, I’m so in love with you  
+Girl, you’re the prayer I never knew I said  
+And I’d choose you in every life I live
+
+Mbali, you’re my calm in the chaos  
+My favorite hello and hardest goodbye  
+With you, even ordinary days feel like magic  
+‘Cause you turn my world to gold
+
+Mbali, I adore you  
+In every word, in everything you do  
+If love had a sound, it’d be saying your name  
+Mbali, I’m so in love with you  
+Girl, you’re the prayer I never knew I said  
+And I’d choose you in every life I live
+
+
+I don’t need perfect, I just need you  
+Your laugh, your heart, the way you see me through  
+So let me love you right, let me love you true  
+Mbali, this whole song is for you
+ 
+Mbali, I adore you  
+Now and forever, it’s always you
+  </div>
+
+  <script>
+    // mbali's birthday: 17 January
+    const bday = new Date("Jan 17, 2027 00:00:00").getTime();
+    
+    setInterval(function() {
+      const now = new Date().getTime();
+      let distance = bday - now;
+      
+      // If birthday passed, set for next year
+      if (distance < 0) {
+        bday = new Date("Jan 17, " + (new Date().getFullYear() + 1) + " 00:00:00").getTime();
+        distance = bday - now;
+      }
+      
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+      document.getElementById("countdown").innerHTML = 
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+    }, 1000);
+  </script>
+
+    <img src="H.E.R..PNG" alt="A description of the image" width="500" height="300">
+
+</body>
+</html>
+
